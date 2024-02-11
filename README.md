@@ -1,12 +1,9 @@
 # Reformatted Alignment
-This is the official repository for [**Reformatted Alignment**](https://arxiv.org/abs/xxx).
+This is the official repository for **Reformatted Alignment**.
 
-## News
-- **Jan 2024**: We release the preprint paper on Arxiv, ReAlign data, and other useful resources in developing them (tasks description, hand-written format, tasks classifier, training data, and nq dataset for factuality evaluation).
 
 ## Table of contents
 
-- [Introduction](#Introduction)
 - [Quick Start](#quick-start)
   - [Setup](#setup)
   - [Pipeline](#pipeline)
@@ -17,31 +14,6 @@ This is the official repository for [**Reformatted Alignment**](https://arxiv.or
   - [Factuality Evaluation: NQ Dataset, ChatGPT Responses, and ReAlign Responses](#factuality-evaluation)
 - [Citation](#citation)
 - [Acknowledgements](#acknowledgements)
-
-## Introduction
-We are re-configuring the role of large models in the construction of instruction data. Instead of directly distilling and relying entirely on the knowledge of the large model, we are solely harnessing its superior instruction-following capability to reconstruct responses according to our pre-defined criteria.
-
-Specifically, we propose a simple and effective method for alignment: **ReAlign** (**Re**formatted **Align**ment), with the following advantages:
-1. **ReAlign** clearly distinguishes the roles that large models and humans should play in the alignment process, enabling individuals to define their preferred values (e.g., specific format for better readability) more flexibly, while the large model synthesizes instructions based on human preferences automatically.
-2. **ReAlign** is orthogonal to supervised fine-tuning (SFT), reinforcement learning from human feedback (RLHF), direct preference optimization (DPO), or other alignment techniques to further enhance the performance of the model.
-3. **ReAlign** can utilize LLMs to automatically enhance the quality of existing instruction datasets at the minimal cost of human annotation and hallucination.
-4. **ReAlign** can provide more additional knowledge for knowledge-intensive tasks, expanding their informativeness and factuality.
-
-
-
-<div align=center><img src="./figs/overall_figs.jpg" style="zoom: 25%;" /></div>
-<center>An overview of our <strong>ReAlign</strong> including three steps. KILT denotes Knowledge Intensive Language Tasks.</center>
-
-ReAlign includes three steps:
-1. **Criteria definition**: We manually create the criteria for reconstructing the response, including 46 different tasks and specific formats for each task, to improve the readability of the responses.
-2. **Retrieval augmentation**: We introduce more knowledge using retrieval augmentation for knowledge-intensive tasks (e.g., open QA and fact verification), enhancing the factuality and informativeness of the responses.
-3. **Reformatting**: To minimize the LLMs' hallucination, instead of entirely distilling from the knowledge of the LLMs, we re-configure the role of LLMs to solely utilize its superior instruction-following ability to reformat the response according to the guidance including the predefined criteria and retrieved evidence.
-
-<div align=center><img src="./figs/intro_graph.jpg" style="zoom: 25%;" width="60%" height="auto"/></div>
-<center><strong>ReAlign</strong> reformats the original response to better format and style, improving the readability, without suffering from hallucinations.</center>
-
-<div align=center><img src="./figs/model_example.jpg" style="zoom: 25%;" /></div>
-<center>An example of the response from the original model and the response from the ReAlign Model</center>
 
 ## Quick Start
 
