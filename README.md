@@ -11,7 +11,7 @@ This is the official repository for **Reformatted Alignment**.
 - [Other Resources](#other-resources)
   - [Tasks Description and Formats](#tasks-description-and-formats)
   - [The Data for Task Classifier](#the-data-for-task-classifier)
-  - [Factuality Evaluation: NQ Dataset, ChatGPT Responses, and ReAlign Responses](#factuality-evaluation)
+  - [Factuality Evaluation](#factuality-evaluation)
 
 ## Quick Start
 
