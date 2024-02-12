@@ -34,9 +34,7 @@ pip install -r requirements.txt
 #### Step 1: Task Classification
 Download the task classifier from huggingface hub:
 
-| Model Name      | HF Checkpoints                                                  | Size    | License                                                      |
-|-----------------|-----------------------------------------------------------------| ------- | ------------------------------------------------------------ |
-| Task Classifier | [🤗 GAIR/ReAlign-Task-Classifier](https://huggingface.co/GAIR/ReAlign-Task-Classifier) | **13B** | [Llama 2](https://ai.meta.com/resources/models-and-libraries/llama-downloads/) |
+> We will upload the model after reviewing this paper.
 
 Then, by using the following prompt, the task classifier can identify which task a query belongs to:
 ```python
@@ -231,13 +229,6 @@ ReAlign Alpaca: `datasets/realign_alpaca.json`
 
 ReAlign No Robots: `datasets/realign_no_robots.json`
 
-The datasets also can be loaded on 🤗Hugging Face:
-
-| Dataset Name   | Hugging Face Link | Size |
-|-------|-----------------------------------------------------------|------|
-| ReAlign Open-Platypus | [🤗 GAIR/ReAlign-Open-Platypus](https://huggingface.co/datasets/GAIR/ReAlign-Open-Platypus) | 25K  |
-| ReAlign Alpaca | [🤗 GAIR/ReAlign-Alpaca](https://huggingface.co/datasets/GAIR/ReAlign-Alpaca) | 52K  |
-| ReAlign No Robots | [🤗 GAIR/ReAlign-No-Robots](https://huggingface.co/datasets/GAIR/ReAlign-No-Robots) | 10K  |
 
 ## Other Resources
 
@@ -283,10 +274,3 @@ The format is as follows:
         "id": 0
 }
 ```
-
-## Citation
-Please cite the paper if the resource in this repo or the paper is helpful to you.
-
-
-## Acknowledgements
-We thank Zengzhi Wang for reviewing our paper and gave valuable feedback. We appreciate the authors in [OpenChat](https://github.com/imoneoi/openchat) for providing the training codebase and the helpfulness.
