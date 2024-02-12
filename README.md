@@ -254,10 +254,6 @@ We randomly sample 100 cases from NQ Dataset for factuality evaluation, which ca
 
 The ground truth is in `datasets/nq/nq_factuality_100.json`.
 
-The ChatGPT responses is in `datasets/nq/nq_factuality_100_ChatGPT_response.json`.
-
-The ReAlign responses is in `datasets/nq/nq_factuality_100_realign.json`
-
 The format is as follows:
 ```python
 {
