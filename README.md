@@ -227,6 +227,10 @@ ReAlign Alpaca: `datasets/realign_alpaca.json`
 
 ReAlign No Robots: `datasets/realign_no_robots.json`
 
+ReAlign GSM8K: `datasets/realign_gsm8k.json`
+
+ReAlign MATH: `datasets/realign_math.json`
+
 
 ## Other Resources
 
